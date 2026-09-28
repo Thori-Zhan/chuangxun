@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chuangxun-offline-v1';
+const CACHE_NAME = 'chuangxun-offline-v2';
 const ASSET_LIST_URL = new URL('./offline-assets.json', self.location.href);
 
 self.addEventListener('install', event => {

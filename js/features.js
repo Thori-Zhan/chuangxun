@@ -186,7 +186,8 @@
 
 (function() {
     var KEY = 'keepaliveAudioEnabled';
-    var SRC = 'https://cdn.jsdelivr.net/gh/0208948/crispy-couscous/silence_gen_1788453040840.mp4';
+    // 本地音频：不依赖外部 CDN，离线时也能尝试保活。
+    var SRC = './assets/audio/keepalive.wav';
     var _audio = null;
     var _unlockBound = false;
 
@@ -1612,4 +1613,3 @@ window.tryShowDailyGreeting = function() {
         if (modal) modal.classList.remove('hidden');
     } catch(e) { console.warn('Daily greeting show error:', e); }
 };
-
